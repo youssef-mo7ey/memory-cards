@@ -1,0 +1,41 @@
+body{
+
+    text-align: center;
+    color: black;
+}
+.parent{
+
+    margin: 30px;
+    width: 300px;
+    height: 300px;
+    transition: transform 1s;
+    transform-style: preserve-3d;
+    position: relative;
+
+
+}
+
+.parent:hover{
+
+    transform: rotateY(180deg);
+}
+
+.parent div{
+    backface-visibility: hidden;
+    height: 100%;
+    width: 100%;
+    margin-bottom: 10px;
+    position: absolute;
+}
+
+.face-front{
+
+    background-color: red;
+}
+
+
+.face-back  {
+
+    background-color:blue;
+    transform: rotateY(180deg);
+}
